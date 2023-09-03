@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import math
 
-
-binary_palette = ['#171821', '#fe3d67']
+color_palette = ['#171821', '#872b95', '#ff7131', '#fe3d67']
+binary_palette = ['#872b95', '#fe3d67']
 
 def api_request(url):
 
