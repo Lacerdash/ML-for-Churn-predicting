@@ -6,23 +6,37 @@
     <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a>
 </div>
 
-This repository contains my project 
+Churn prediction is crucial for businesses to identify potential customers who are likely to discontinue using their service. This repository contains my project aiming to tackle this issue.
 
 ## **Project Overview**
 
-**Objectivies:** Correctly identify potential Churn costumers.
+**Objectives:** To identify potential churn customers and understand the associated patterns, thus enabling businesses to take proactive measures to retain them.
 
 **Data:** The data is avaible [here]() and the data dictionary [here]()
 
-**Structure:** The project is in 3 parts: ETL (Extract, Transform and load), Creating and comparing Classificators Models and 
+**Structure:** The project is in 3 parts: 
+1. Extract, Transform and load (ETL) and Exploratory Data Analysis (EDA)
+2. Creating and comparing Classifier Models
+3. 
 
 ---
 
-### **1 - Extract, Transform and Load**
+### **1 - Extract, Transform and Load (ETL) and Exploratory Data Analysis (EDA)**
 
-The first part of the project is dedicated to the ETL process of the data. Extracting the data in json format into python, for subsequent transformation/cleaning of the data, followed by loading the data into a [csv file]().
+*ETL*
+- The dataset, in JSON format, is imported into Python and undergoes transformation and cleaning. After processing, the data is saved to a [csv file](). 
 
-All activities performed are documented in this [notebook]().
+*EDA*
+- Post-ETL, various visualizations are generated to delve deeper into the patterns within the data, identify potential problems, and better understand the overall structure of the dataset.
+
+Challenges faced: 
+- Handling missing values 
+- Data enconding
+- Correcting data types,
+- Ploting relevants graphs for analysis
+- Ceation of functions in a python file ([helper.py](https://github.com/Lacerdash/ML-for-Churn-predicting/blob/master/helpers.py)) for a more clean notebook.
+
+Detailed documentation of the ETL and EDA processes can be found in this [notebook](), which covers data cleaning, handling missing values, data exploration, and preliminary analysis.
 
 ---
 
