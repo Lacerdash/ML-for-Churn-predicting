@@ -1,0 +1,24 @@
+
+Data Dictionary
+
+- `customerID`: Unique identification number for each customer.
+- `Churn`: Indicates whether the customer left the company.
+- `gender`: Gender (male or female).
+- `SeniorCitizen`: Indicates if a customer is aged 65 or older.
+- `Partner`: Indicates if the customer has a partner.
+- `Dependents`: Indicates if the customer has dependents.
+- `tenure`: Number of months the customer has been with the company.
+- `PhoneService`: Subscription to phone service.
+- `MultipleLines`: Subscription to multiple phone lines.
+- `InternetService`: Subscription to an internet provider.
+- `OnlineSecurity`: Additional subscription for online security.
+- `OnlineBackup`: Additional subscription for online backup.
+- `DeviceProtection`: Additional subscription for device protection.
+- `TechSupport`: Additional subscription for technical support with reduced wait time.
+- `StreamingTV`: Cable TV subscription.
+- `StreamingMovies`: Movie streaming subscription.
+- `Contract`: Type of contract.
+- `PaperlessBilling`: Indicates if the customer prefers online billing.
+- `PaymentMethod`: Method of payment.
+- `Charges.Monthly`: Total of all customer services per month.
+- `Charges.Total`: Total amount spent by the customer.
