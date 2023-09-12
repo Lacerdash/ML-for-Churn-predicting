@@ -2,6 +2,7 @@ import requests
 import json
 from sklearn.preprocessing import OneHotEncoder
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import math
@@ -96,7 +97,20 @@ def distribution_plot(target_variable, independent_variables, dataframe, y_limit
     plt.tight_layout()
     plt.show()
 
+def plot_heat_map(dataframe, threshold=0.5):
+    corr = dataframe.corr()
 
+    # Create a mask for the upper triangle
+    mask_upper = np.triu(np.ones_like(corr, dtype=bool))
 
+    # Apply threshold filter
+    mask_threshold = np.abs(corr) < threshold
 
+    # Combine the masks
+    final_mask = mask_upper | mask_threshold
+
+    plt.figure(figsize=(20,15))
+    sns.heatmap(data=corr, annot=True, mask=final_mask, cmap='coolwarm')
+
+    plt.show()
 
