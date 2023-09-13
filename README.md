@@ -16,7 +16,7 @@ Churn prediction is crucial for businesses to identify potential customers who a
 
 **Structure:** The project is in 3 parts: 
 1. Extract, Transform and load (ETL) and Exploratory Data Analysis (EDA)
-2. Creating and comparing Classifier Models
+2. Creating, Selecting and Optimizing models
 3. 
 
 ---
@@ -36,30 +36,29 @@ Challenges faced:
 - Ploting relevants graphs for analysis
 - Ceation of functions in a python file ([helper.py](https://github.com/Lacerdash/ML-for-Churn-predicting/blob/master/helpers.py)) for a more clean notebook.
 
-Detailed documentation of the ETL and EDA processes can be found in this [notebook](), which covers data cleaning, handling missing values, data exploration, and preliminary analysis.
+Detailed documentation of the ETL and EDA processes can be found in this [notebook](https://github.com/Lacerdash/ML-for-Churn-predicting/blob/master/Churn_Data_Cleansing_and_Exploration.ipynb), which covers data cleaning, handling missing values, data exploration, and preliminary analysis.
 
 ---
 
-### **2 - Creating and Comparing models**
+### **2 - Creating, Selecting and Optimizing models**
 
 The second part of the project is dedicated to: 
 
-- Process the data from the first part "1 - Extract, Transform and Load" to create and compare models.
-    - Treating null and NaN data;
-    - Treating missing data in the zone columns
-    - Transforming categorical columns into binary columns (0, 1)
-    - Removing useless columns
-    - Saving the DataFrame in a parquet file
-- Creating Models
-    - Vectorizing the data (Vector Assembler)
-    - Creating 4 models (Linear Regression, Decision Tree Regressor, Random Forest Regressor and Gradient-boosted tree Regressor)
-- Optimizing the best model
-    - Cross Validation and Hyperparameters Testing
+- Process the [encoded_churn_data.csv](https://github.com/Lacerdash/ML-for-Churn-predicting/blob/master/data/encoded_churn_data.csv) file generated in the first part: "1 - Extract, Transform and Load" to create and compare models"
+    - Creating new columns
+    - Scaling data
+    - Balacing data
+- Creating Baseline Models
+    - Creating 9 models (Decision Tree Regressor, Random Forest Regressor, Logistic Regression, KNeighborsClassifier, SVC, GradientBoostingClassifier, GaussianNB, AdaBoostClassifier and MLPClassifier)
+- Select best model basead on choosen metric
+- Optimize best models Hyperparameters and access its results
+    - Usinig nested Cross validation to peform hyperparameter tunning and model assessment (You can check my in depth notebook on [Nested Cross Validation](https://github.com/Lacerdash/Nested-Cross-Validation))
+- Save model
 
-All activities performed are documented in this [notebook]().
+All activities performed are documented in this [notebook](https://github.com/Lacerdash/ML-for-Churn-predicting/blob/master/ModelCreation_Selection_Optimization.ipynb).
 
 ---
 
-## Semana 3
+## **3 - ...**
 
 Working ...
