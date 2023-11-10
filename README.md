@@ -17,7 +17,7 @@ Churn prediction is crucial for businesses to identify potential customers who a
 **Structure:** The project is in 3 parts: 
 1. Extract, Transform and load (ETL) and Exploratory Data Analysis (EDA)
 2. Creating, Selecting and Optimizing models
-3. 
+3. Creating and Streamlit app to deploy our model
 
 ---
 
@@ -59,6 +59,13 @@ All activities performed are documented in this [notebook](https://github.com/La
 
 ---
 
-## **3 - ...**
+## **3 - Streamlit app and Model deployment**
 
-Working ...
+To deploy the model we created a streamlit app that allows users to interact with it through an easy interface. This includes:
+
+- Model selection
+- Data insertion
+- Prediction of Churn probability
+- Exploratory Data Analysis tab with visualizations
+
+[Streamlit app](https://ml-for-churn-predicting.streamlit.app/)
