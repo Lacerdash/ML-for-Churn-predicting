@@ -8,6 +8,8 @@
 
 Churn prediction is crucial for businesses to identify potential customers who are likely to discontinue using their service. This repository contains my project aiming to tackle this issue.
 
+🚀 **[Click Here to Access the App!](https://ml-for-churn-predicting.streamlit.app/)** 🌟
+
 ## **Project Overview**
 
 **Objectives:** To identify potential churn customers and understand the associated patterns, thus enabling businesses to take proactive measures to retain them.
